@@ -1,0 +1,815 @@
+/* universal selector */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden; 
+}
+
+/* <!-- nav bar 1 styling --> */
+
+
+.navbar1 {
+    position: relative;
+    background-color: black;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/* main nav section */
+.container {
+    position: relative;
+    background-image: url("./images/home_backgroundimage");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+.navpa{
+    position: relative;
+}
+nav {
+    display: flex;
+     width: 100%; 
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-family: "Smooch Sans", sans-serif;
+    position: fixed;
+    margin-top: 40px;
+    z-index: 1;
+    top: 0px;
+    background-color: transparent;
+
+}
+
+ .logo {
+    color: white;
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
+}
+
+.navlist a {
+    position: relative;
+    margin: 0px 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+/* underline for link in nav */
+.navlist a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navlist .navicon {
+    padding-left: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+nav:hover {
+    background-color: black;
+}
+nav p{
+    position: absolute;
+    color: white;
+    font-family: "Mate SC", system-ui;
+    margin-top: 550px;
+    margin-left: 40px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+/* COLLECTIONS */
+.collections{
+    background-color: black;
+    margin-top: 0px;
+}
+.collectionh1{
+    font-family: "Smooch Sans", system-ui;
+    font-size: 50px;
+    font-weight: 200;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 15px;
+}
+.collections .logo{
+    color: white;
+    font-family: "Tangerine", cursive;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+.collections P{
+    text-align: center;
+    font-family: "Smooch Sans", system-ui;
+    font-size: 20px;
+    color: white;
+}
+.collectionimages{
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.collectionimages p{
+    line-height: 40px;
+}
+.collectionimages img{
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+/* bridal experiance */
+.experiance{
+    background-color: black;
+    margin-top: 0px;
+    color: white;
+    font-family: "Smooch Sans", system-ui;
+}
+.experiance .exphead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+    padding-top: 40px;
+    font-family: "Smooch Sans", system-ui;
+}
+.experiance .exphead hr{
+    width: 400px;
+    height: 0px;
+}
+.experiance .exphead h1{
+    padding: 10px 5px;
+
+    font-size: 50px;
+   font-family: "Smooch Sans", system-ui;
+   font-size: 50px;
+   font-weight: 200;
+
+   text-align: center;
+   color: white;
+   letter-spacing: 15px;
+}
+.experiance .exph2{
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+.experiance .experiancebody{
+    display: flex;
+    padding-top: 50px;
+    font-family: "Smooch Sans", system-ui;
+    font-weight: 100;
+    flex-wrap: wrap;
+ 
+}
+.experiance .experiancebody img{
+    width: 400px;
+}
+.experiance .experiancebody #expimage1{
+    width: 400px;
+    height: 600px;
+    margin-left: 30px;
+}
+.experiance .experiancebody p{
+    padding-left: 60px;
+    padding-top: 100px;
+    width: 800px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 600px;
+    padding-right: 60px;
+}
+.experiance .experiancebody #expimage2{
+    margin-top: 180px;
+    width: 430px;
+    height: 600px;
+}
+.experiance .experiancebody #exppara{
+    margin-top: -200px;
+    margin-right: 0px;
+}
+.experiance .experiancebody #expimage3{
+    margin-top: -180px;
+}
+.experiance .experiancebody span{
+    color: white;
+    margin-top: 100px;
+    font-size: 20px; 
+    width: 400px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+.experiance .experiancebody span a{
+    color: white;
+    text-decoration: underline;
+}
+/* SHOPNOW */
+.shopnow{
+    background-color: black;
+}
+.shopnow h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family:"Smooch Sans", system-ui ;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.shopnow p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family:"Smooch Sans", system-ui ;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.shopnowimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.shopnowimg .shopimg{
+    height: 550px;
+    width: 400px;
+
+}
+.shopnowimg .shopimg img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    /* height: 200px;
+    width: 300px; */
+   
+}
+.shopbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shopbtn button{
+    color: white;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: 1px white solid;
+}
+.appoitment{
+    background-color: black;
+    color: white;
+}
+.appoitment .appointmenthead{
+    font-family:"Smooch Sans", system-ui ;
+    text-align: center;
+}
+.appoitment .appointmenthead h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.appoitment .appointmenthead p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.appoint{
+    position: relative;
+    background-color: black;
+}
+
+.appointmentimage{
+    background-image: url("./images/appointment_image");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+   
+}
+.appoint button{
+    font-family:"Smooch Sans", system-ui ;
+    font-size: 20px;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 3px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.appoint button:hover{
+    background-color: white;
+}
+.tag{
+    position: relative;
+    margin-top: 600px;
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+    font-family:"Smooch Sans", system-ui ;
+}
+.tag .taghead h1{
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+}
+.tag .tagbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.tag .tagbody img{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    padding: 10px;
+   
+}
+/* contactus */
+.contactus{
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contacticon{
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 30px 10px;
+    padding: 13px;
+    color: white;
+}
+.contacticon:hover{
+    background-color: white;
+    color: black;
+}
+.contacticon:hover{
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+/* footer */
+footer
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-around;
+    font-family:"Smooch Sans", system-ui ;
+}
+footer button{
+    font-family:"Smooch Sans", system-ui ;
+}
+.footer1{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+footer .footer1 h1{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+.footer2{
+    padding-top: 100px;
+}
+.footer2 li{
+    text-decoration: none;
+    padding: 5px 0px;
+    list-style: none;
+}
+
+
+.footer3{
+    padding-top: 100px;
+}
+.footer3 li{
+    text-decoration: none;
+    padding: 5px 0px;
+    list-style: none;
+}
+
+.footer2 li a{
+    font-family:"Smooch Sans", system-ui ;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.footer3 li a{
+    font-family:"Smooch Sans", system-ui ;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.footer2 li a:hover{
+    text-decoration: underline;
+}
+.footer3 li a:hover{
+    text-decoration: underline;
+}
+/*responsive webpage */
+  @media(max-width:1204px){ 
+    .container{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-attachment: fixed;
+      
+    }
+    .icons{
+        display: flex;
+        cursor: pointer;
+    }
+    #closeicon{
+        display: none;
+    }
+    .navlist {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .navlist a {
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlist .navicon {
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    .navlist a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: right;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    #check:checked~.icons #menuicon {
+        display: none;
+    }
+
+    #check:checked~.icons #closeicon {
+        display: block;
+    }
+    #check:checked~.navlist{
+        display: block;
+    }
+    nav p{
+        position: absolute;
+        color: white;
+        font-family: "Mate SC", system-ui;
+        margin-top: 350px;
+        margin-left: 40px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .collectionimages{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #exppara{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .experiancebody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .appoitment button{
+        left: 200px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+       }
+    .footer1{
+        padding-left: 0px;
+    } 
+    .appoitment .appoint button{
+        left: 320px;
+    }
+}
+
+
+@media(max-width:760px) {
+    .container{
+        position: relative;
+        background-image: url("./images/home_backgroundimage");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+      
+    }
+    .icons{
+        display: flex;
+        cursor: pointer;
+    }
+    #closeicon{
+        display: none;
+    }
+    .navlist {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .navlist a {
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlist .navicon {
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    .navlist a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: right;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    #check:checked~.icons #menuicon {
+        display: none;
+    }
+
+    #check:checked~.icons #closeicon {
+        display: block;
+    }
+    #check:checked~.navlist{
+        display: block;
+    }
+    nav p{
+        position: absolute;
+        color: white;
+        font-family: "Mate SC", system-ui;
+        margin-top: 350px;
+        margin-left: 40px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .collectionimages{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #exppara{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .experiancebody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+       }
+    .footer1{
+        padding-left: 0px;
+    } 
+    .appoitment .appoint button{    
+        width: 250px;
+        font-size: 15px;
+        left: 210px;
+    }
+
+} 
+
+ @media(max-width:481px){
+
+        .container{
+            position: relative;
+            background-image: url("./images/bg481.png");
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            background-attachment: fixed;
+          
+        }
+        #expimage3{
+            margin-left: 30px;
+        }
+        #expimage2{
+            margin-left: 18px;
+        }
+        .icons{
+            display: flex;
+            cursor: pointer;
+        }
+        #closeicon{
+            display: none;
+        }
+        .navlist {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            background-color: black;
+            display: none;
+        }
+        .navlist a {
+            display: flex;
+            margin: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .navlist .navicon {
+            margin: 10px;
+            margin-left: 0px;
+        }
+    
+        .navlist a::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: right;
+        }
+    
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    
+        #check:checked~.icons #menuicon {
+            display: none;
+        }
+    
+        #check:checked~.icons #closeicon {
+            display: block;
+        }
+        #check:checked~.navlist{
+            display: block;
+        }
+        .appoitment .appoint button{
+            left: 120px;
+        }
+        body{
+            background-color: black;
+        }
+
+}
+        /* .collectionimages{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #exppara{
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+        .experiancebody{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .appoitment button{
+            left: 100px;
+        }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+    }
+    .footer1{
+        padding-left: 0px;
+    } */
+
+
+    .html{
+        scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 10px;
+        height: 100px;
+    }
